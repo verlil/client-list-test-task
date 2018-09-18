@@ -1,0 +1,13 @@
+<a class="list-group-item">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">
+      {{ client.generalFirstName }} {{ client.generalLastName }}
+    </h4>
+    <p class="list-group-item-text">{{ client.jobTitle }}</p>
+  </div>
+  <span class="pull-right">
+    <img [src]="client.generalAvatar"
+         alt="{{ client.generalFirstName }} {{ client.generalLastName }}"
+         class="img-responsive">
+  </span>
+</a>
