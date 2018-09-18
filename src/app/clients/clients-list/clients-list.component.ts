@@ -23,6 +23,8 @@ export class ClientsListComponent implements OnInit, OnDestroy {
         }
       );
     this.clients = this.clientService.getClients();
+
+
   }
 
   ngOnDestroy() {
