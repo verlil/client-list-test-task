@@ -14,4 +14,8 @@ export class ClientService {
   getClients() {
     return this.clients.slice();
   }
+
+  getClient(index: number) {
+    return this.clients[index];
+  }
 }
