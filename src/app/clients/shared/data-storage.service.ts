@@ -35,7 +35,7 @@ export class DataStorageService {
             );
         });
       })).subscribe(data => {
-      this.clientService.setClients(Object.values(data));
+      this.clientService.loadClients(Object.values(data));
     });
   }
 }

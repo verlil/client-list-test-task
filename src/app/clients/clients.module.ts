@@ -5,7 +5,9 @@ import {ClientsListComponent} from './clients-list/clients-list.component';
 import {ClientItemComponent} from './clients-list/client-item/client-item.component';
 import {ClientsRoutingModule} from './clients-routing.module';
 import {ClientDetailsComponent} from './client-details/client-details.component';
+import { ClientSearchComponent } from './client-search/client-search.component';
 import {CommonModule} from '@angular/common';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,11 +15,14 @@ import {CommonModule} from '@angular/common';
     ClientsStartComponent,
     ClientsListComponent,
     ClientDetailsComponent,
-    ClientItemComponent
+    ClientItemComponent,
+    ClientSearchComponent
   ],
   imports: [
     ClientsRoutingModule,
-    CommonModule]
+    CommonModule,
+    FormsModule
+  ]
 })
 
 export class ClientsModule {
