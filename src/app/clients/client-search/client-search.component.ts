@@ -32,8 +32,13 @@ export class ClientSearchComponent implements OnInit, OnDestroy {
     searchValue = searchValue.toLowerCase();
 
     this.searchedClients = this.loadedClients.filter(client => {
-      return client.generalFirstName.toLowerCase().includes(searchValue) ||
-        client.generalLastName.toLowerCase().includes(searchValue);
+
+      for (const prop in client) {
+        if (client[prop].toLowerCase().includes(searchValue)) {
+          return true;
+        }
+      }
+
     });
 
     this.clientService.setClients(this.searchedClients);

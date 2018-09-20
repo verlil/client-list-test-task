@@ -1,13 +1,11 @@
-<div class="container">
-  <div class="my-2 text-center">
-    <form class="form-inline">
-      <div class="form-group">
-        <input type="text"
-               class="form-control"
-               placeholder="Search..."
-               name="search"
-               (input)="onSearchChange($event.target.value)">
-      </div>
-    </form>
-  </div>
+<div class="col-12 my-2">
+  <form>
+    <div class="form-group">
+      <input type="text"
+             class="form-control"
+             placeholder="Search..."
+             name="search"
+             (input)="onSearchChange($event.target.value)">
+    </div>
+  </form>
 </div>

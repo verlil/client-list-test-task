@@ -29,6 +29,9 @@ export class ClientService {
   }
 
   getClient(index: number) {
+    if (this.clients.length < 1) {
+      return new Client('', '', '', '', '', '', '', '', '', '', '');
+    }
     return this.clients[index];
   }
 }

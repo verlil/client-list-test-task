@@ -1,1 +1,26 @@
-<img src="{{client.generalAvatar}}" alt="{{ client.generalFirstName }} {{client.generalLastName}}" class="img-responsive" style="max-height: 50px;">
+<div class="card-container">
+  <div class="card-item">
+    <div class="card border-0">
+      <div class="card-block">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 text-center">
+            <img class="btn-md" src="{{client.generalAvatar}}"
+                 alt="{{ client.generalFirstName }} {{client.generalLastName}}">
+          </div>
+          <div class="col-md-8 col-sm-8">
+            <h2 class="card-title">{{ client.generalFirstName}} {{ client.generalLastName}}</h2>
+            <p class="card-text"> {{client.jobCompany}} </p>
+            <p class="card-text"><strong>Job title: </strong> {{client.jobTitle}} </p>
+            <p class="card-text"><strong>Email: </strong> {{client.contactEmail}} </p>
+            <p class="card-text"><strong>Phone: </strong> {{client.contactPhone}} </p>
+            <p class="card-text"><strong>Country: </strong> {{client.addressCountry}} </p>
+            <p class="card-text"><strong>City: </strong> {{client.addressCity}} </p>
+            <p class="card-text"><strong>Street: </strong> {{client.addressStreet}} </p>
+            <p class="card-text"><strong>Zip-code: </strong> {{client.addressZipCode}} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
